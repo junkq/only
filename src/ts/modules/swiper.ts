@@ -32,8 +32,8 @@ export function initializeSwiper(
                 spaceBetween: 38,
             },
             620: {
-                slidesPerView: 50,
-                spaceBetween: 38,
+                slidesPerView: 1.8,
+                spaceBetween: 50,
             },
             960: {
                 slidesPerView: 2.3,
@@ -58,7 +58,9 @@ export function updateSwiper(index: number) {
     if (index >= 0 && index < swipers.length) {
         const swiperInstance = swipers[index];
         swiperInstance.update();
-        swiperInstance.slideTo(0, 0, false);
+        setTimeout(() => {
+            swiperInstance.slideTo(0, 0, false);
+        }, 100);
     }
 }
 
@@ -72,8 +74,3 @@ export function initSwiper(el: HTMLElement) {
         initializeSwiper(carouselElement, carouselPagination, carouselNavigationPrev, carouselNavigationNext);
     }
 }
-
-
-window.addEventListener('resize', () => {
-    swipers.forEach((_, index) => updateSwiper(index));
-});
