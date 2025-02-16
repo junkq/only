@@ -49,7 +49,8 @@ export function initializeTimeline(timelineCircle: HTMLElement, el: Element, tim
                         }, {
                             opacity: 1,
                             y: 0,
-                            duration: animationDuration
+                            duration: animationDuration,
+                            delay: 0.2,
                         });
                     }
                 });

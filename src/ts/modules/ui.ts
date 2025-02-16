@@ -89,7 +89,8 @@ export function handleNavigation(direction: 'prev' | 'next', el: Element, timeli
             }, {
                 opacity: 1,
                 y: 0,
-                duration: 0.5
+                duration: 0.5,
+                delay: 0.2,
             });
         }
     });
