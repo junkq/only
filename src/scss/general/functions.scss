@@ -1,0 +1,19 @@
+@use "sass:math";
+@use './variables.scss'as *;
+
+@function em($value) {
+    @if type-of($value)=='list' {
+        $em-values: ();
+
+        @for $i from 1 through length($value) {
+            $pxValue: nth($value, $i);
+            $em-values: append($em-values, math.div($pxValue, $html-font-size) * 1em);
+        }
+
+        @return $em-values;
+    }
+
+    @else {
+        @return math.div($value, $html-font-size) * 1em;
+    }
+}

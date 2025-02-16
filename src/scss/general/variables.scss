@@ -1,0 +1,56 @@
+$default-font: "ptSans",
+"Arial",
+sans-serif;
+
+$additional-font: "bebasNeue",
+"Arial",
+sans-serif;
+
+$html-font-size: 14px;
+
+
+$container-spacing-xs: 20px;
+
+$container-spacing-xxl-left: 211px;
+$container-spacing-xxl-right: 105px;
+
+$container-spacing-xxxl-left: 220px;
+$container-spacing-xxxl-right: 110px;
+
+$spacing-xs: 5px;
+$spacing-sm: 20px;
+$spacing-md: 30px;
+$spacing-lg: 40px;
+$spacing-xl: 60px;
+$spacing-xxl: 80px;
+$spacing-xxxl: 160px;
+
+$tr-default: 0.3s ease;
+
+$xs: 320px;
+$sm: 480px;
+$md: 620px;
+$lg: 960px;
+$xl: 1200px;
+$xxl: 1366px;
+$xxxl: 1920px;
+$xxxxl: 2400px;
+
+$viewport-height: calc(var(--vh, 1vh) * 100);
+
+$vertical-md-min-height: 416px;
+$vertical-xl-min-height: 500px;
+$vertical-xxl-min-height: 740px;
+
+
+$color-white: #ffffff;
+$color-black: #000000;
+
+$color-default: #42567A;
+$color-blue: #3877EE;
+$color-fuschia: #EF5DA8;
+$color-lris: #5D5FEF;
+$color-gray: #C7CDD9;
+$color-background: #E3E6ED;
+$color-stroke: rgba($color-default, 0.1);
+$color-border: rgba($color-default, 0.5);

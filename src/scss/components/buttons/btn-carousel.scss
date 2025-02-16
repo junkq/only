@@ -1,0 +1,77 @@
+@use '../../general/variables.scss'as *;
+@use '../../general/mixins.scss'as *;
+@use '../../general/functions.scss'as *;
+
+.btn-carousel {
+    @include flex-xy-center;
+    border-radius: 50%;
+
+    transition: opacity $tr-default;
+
+    svg {
+        transition: color $tr-default;
+    }
+
+    &--default {
+        width: em(25px);
+        height: em(25px);
+
+        svg {
+            width: em(8px);
+            height: em(12px);
+        }
+
+        @include media-breakpoint(xxl-up) {
+            width: em(35px);
+            height: em(35px);
+
+
+        }
+    }
+
+    &--small {
+        width: em(25px);
+        height: em(25px);
+
+        svg {
+            width: em(8px);
+            height: em(12px);
+        }
+
+        @include media-breakpoint(xxl-up) {
+            width: em(28px);
+            height: em(28px);
+        }
+    }
+
+    &--white {
+        background: $color-white;
+        box-shadow: 0px 0px 15px 0px rgba(56, 119, 238, 0.1);
+        color: $color-blue;
+
+        @include media-breakpoint(xxl-up) {
+
+            &:hover {
+                color: $color-default;
+            }
+        }
+    }
+
+    &--background {
+        border: 1px solid $color-border;
+        background: $color-background;
+
+        &.is-disabled {
+            pointer-events: none;
+            color: rgba($color-default, 0.5);
+        }
+
+        @include media-breakpoint(xxl-up) {
+            transition: background $tr-default;
+
+            &:hover {
+                background: $color-white;
+            }
+        }
+    }
+}

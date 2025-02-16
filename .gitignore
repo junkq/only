@@ -1,0 +1,21 @@
+# dependencies
+/node_modules
+/html/node_modules
+
+# production
+
+# misc
+Thumbs.db
+.DS_Store
+.env
+*.log*
+
+npm-debug.log*
+
+# editors
+.idea
+*.sublime*
+.vscode
+
+#other
+*Zone.Identifier

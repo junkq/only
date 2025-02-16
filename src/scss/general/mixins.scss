@@ -1,0 +1,59 @@
+@use './variables.scss'as *;
+
+@mixin media-breakpoint ($breakpoint) {
+
+    @if $breakpoint==xs-up {
+        @media only screen and (min-width: $xs) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==sm-up {
+        @media only screen and (min-width: $sm) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==md-up {
+        @media only screen and (min-width: $md) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==lg-up {
+        @media only screen and (min-width: $lg) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==xl-up {
+        @media only screen and (min-width: $xl) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==xxl-up {
+        @media only screen and (min-width: $xxl) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==xxxl-up {
+        @media only screen and (min-width: $xxxl) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==xxxxl-up {
+        @media only screen and (min-width: $xxxxl) {
+            @content;
+        }
+    }
+}
+
+
+@mixin flex-xy-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

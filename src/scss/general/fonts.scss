@@ -1,0 +1,14 @@
+@mixin font-face($name, $weight, $style: normal) {
+    @font-face {
+        font-weight: $weight;
+        font-family: $name;
+        font-style: $style;
+        src: url('../fonts/'+ $name + '-'+ $weight + '.woff2') format('woff2'),
+            url('../fonts/'+ $name + '-'+ $weight + '.ttf') format('truetype');
+        font-display: swap;
+    }
+}
+
+@include font-face('ptSans', 400);
+@include font-face('ptSans', 700);
+@include font-face('bebasNeue', 400);

@@ -1,0 +1,10 @@
+<button type="button" class="btn-carousel @@if(context.className) {@@className}"
+    @@if(context.label) {aria-label="@@label"}
+>
+    @@include('../../tools/svg-icon.html', {
+        'icon': 'arrow',
+        'width': '8',
+        'height': '12'
+    })
+    
+</button>

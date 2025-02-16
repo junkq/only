@@ -1,0 +1,18 @@
+@use './variables.scss'as *;
+@use './mixins.scss'as *;
+@use './functions.scss'as *;
+
+.h1 {
+    font-size: em(20px);
+    line-height: 120%;
+    font-weight: 700;
+
+    @include media-breakpoint(xxl-up) {
+        font-size: em(40px);
+        line-height: 110%;
+    }
+
+    @include media-breakpoint(xxxl-up) {
+        font-size: em(39px);
+    }
+}
